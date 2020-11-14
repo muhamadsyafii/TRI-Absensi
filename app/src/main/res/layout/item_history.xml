@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/item_margin_small"
+    android:paddingStart="@dimen/space_small_3"
+    android:paddingEnd="@dimen/space_small_3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="1.9"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_small_3"
+            android:paddingTop="@dimen/space_small_2"
+            android:paddingRight="@dimen/space_small_3"
+            android:paddingBottom="@dimen/space_small_3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_small_3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Nama"
+                    android:textColor="@color/textGrey"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="NIK"
+                    android:textColor="@color/textGrey"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:gravity="center_vertical"
+                    android:text="Waktu Masuk"
+                    android:textColor="@color/textGrey"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:gravity="center_vertical"
+                    android:text="Waktu Keluar"
+                    android:textColor="@color/textGrey"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/space_small_2"
+                    android:gravity="center_vertical"
+                    android:text="Status"
+                    android:textColor="@color/textGrey"
+                    android:textSize="@dimen/text_title"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_small_1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    tools:text="Muhamad Syafii"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/text_title"
+                    android:maxLines="2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_nik_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    tools:text="123456"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/text_title"
+                    android:maxLines="2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_absent_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:gravity="center_vertical"
+                    tools:text="07:03:49"
+                    android:textColor="@color/textGrey"
+                    android:textSize="@dimen/text_title"
+                    android:maxLines="2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_absent_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:gravity="center_vertical"
+                    tools:text="18:03:49"
+                    android:textColor="@color/textGrey"
+                    android:textSize="@dimen/text_title"
+                    android:maxLines="2"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/space_small_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_status_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Masuk"
+                        android:textColor="@color/textGreen"
+                        android:textSize="@dimen/text_title"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_date_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="30 June 2019"
+                        android:textColor="@color/textGrey"
+                        android:textSize="@dimen/text_title"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#252525" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

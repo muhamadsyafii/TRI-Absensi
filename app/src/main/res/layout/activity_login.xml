@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:background="@color/textWhite"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="@dimen/login_all_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logo_trid" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/login_margin"
+                    android:text="@string/account_login_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/text_title" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIK"
+                    android:textColor="@color/textBlack" />
+
+                <EditText
+                    android:id="@+id/et_nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter your NIK"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/text_padding"
+                    android:paddingBottom="@dimen/text_padding"
+                    android:textColor="@color/textBlack"
+                    android:textColorHint="@color/textGreyHint"
+                    android:textCursorDrawable="@drawable/cursor_drawable" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/lineGrey" />
+
+                <TextView
+                    android:id="@+id/mWarningNik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your valid nik"
+                    android:textColor="@color/textRed" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/login_btn_margin_top"
+                    android:background="@drawable/rounded_login_button"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textSmokeWhite" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

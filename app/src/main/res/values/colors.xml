@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="backgroundTransparent">#804B4B4B</color>
+
+    <color name="textWhite">#ffffff</color>
+    <color name="textBlack">#111111</color>
+    <color name="textGreen">#24885d</color>
+    <color name="textGreenDark">#04562d</color>
+    <color name="textSmokeWhite">#e8e8e8</color>
+    <color name="textGreyTitle">#d6d6d6</color>
+    <color name="textGreyFaqTitle">#c6c6c6</color>
+    <color name="textGreyHint">#afafaf</color>
+    <color name="textGrey2">#b2b2b2</color>
+    <color name="textGreyTransactionValue">#5f5f5f</color>
+    <color name="textGreyTransaction">#6e6e6e</color>
+    <color name="textGrey">#9a9a9a</color>
+    <color name="textGreyFaq">#969696</color>
+    <color name="textGreyDark">#777777</color>
+    <color name="textSoftGreen">#42886a</color>
+    <color name="textLightGreen">#9ed3bd</color>
+    <color name="textRed">#BD0C00</color>
+    <color name="textBlue">#1E87FF</color>
+    <color name="lineGrey">#9a9a9a</color>
+    <color name="green">#00a853</color>
+</resources>

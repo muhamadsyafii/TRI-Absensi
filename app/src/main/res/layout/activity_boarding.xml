@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textWhite"
+    tools:context=".controller.intro.BoardingActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_boarding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tb_boarding" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_boarding"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:tabGravity="start"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorHeight="0dp" />
+
+    <Button
+        android:id="@+id/btn_action_boarding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/size_16sp"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/rounded_button"
+        tools:text="Next  ->"/>
+
+</RelativeLayout>
