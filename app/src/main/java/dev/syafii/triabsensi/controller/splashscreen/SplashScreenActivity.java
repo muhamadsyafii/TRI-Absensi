@@ -29,18 +29,14 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (isFirstInstall) {
-                    Log.e("Splash","Is Install" );
-                    if (isLogin){
-                        Log.e("Splash","Login " );
+                    if (isLogin) {
                         ActivityUtils.openActivity(SplashScreenActivity.this, MainActivity.class);
                         finish();
-                    }else{
-                        Log.e("Splash","Not Login" );
+                    } else {
                         ActivityUtils.openActivity(SplashScreenActivity.this, LoginActivity.class);
                         finish();
                     }
                 } else {
-                    Log.e("Splash","Not Install" );
                     ActivityUtils.openActivity(SplashScreenActivity.this, BoardingActivity.class);
                     finish();
                 }
