@@ -1,7 +1,7 @@
 /*
  * Created by Muhamad Syafii
  * Tuesday,20/10/2020
- * Copyright (c) 2020 by DeOne.
+ * Copyright (c) 2020 by secode.id
  * All Rights Reserved
  */
 

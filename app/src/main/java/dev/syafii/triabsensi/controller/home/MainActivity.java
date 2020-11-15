@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
                 showProfile(response.getFoto());
             }
         });
-        setupShowCase(R.id.im_history, "Menu History", "Klik disin untuk melihat history absen", 1);
+        setupShowCase(R.id.im_history, "Menu History", "Klik disini untuk melihat history absen", 1);
     }
 
     @Override
