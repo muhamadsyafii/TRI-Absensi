@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/blue"
     android:orientation="vertical"
     tools:context=".controller.home.MainActivity">
 
@@ -12,7 +12,7 @@
         android:id="@+id/mAppBarLayout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary">
+        android:background="@color/blue">
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,7 +91,7 @@
                             android:textColor="@color/textBlack"
                             android:textSize="@dimen/text_title"
                             android:textStyle="bold"
-                            tools:text="nama" />
+                            tools:text="Nama" />
 
                         <LinearLayout
                             android:id="@+id/ll_nik"
@@ -110,7 +110,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:textColor="@color/textBlack"
-                                tools:text="nik" />
+                                tools:text="NIK" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -130,7 +130,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:textColor="@color/textBlack"
-                                tools:text="category" />
+                                tools:text="Kategori" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -149,7 +149,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
                                 android:textColor="@color/textBlack"
-                                tools:text="dob" />
+                                tools:text="Jenis Kelamin" />
                         </LinearLayout>
                     </RelativeLayout>
 
@@ -168,7 +168,7 @@
                             android:background="@drawable/rounded_login_button"
                             android:text="Absen Masuk"
                             android:textAllCaps="false"
-                            android:textColor="@color/textSmokeWhite" />
+                            android:textColor="@color/textWhite" />
 
                         <Button
                             android:id="@+id/btn_absent_out"
@@ -179,7 +179,7 @@
                             android:background="@drawable/rounded_login_button"
                             android:text="Absen Keluar"
                             android:textAllCaps="false"
-                            android:textColor="@color/textSmokeWhite" />
+                            android:textColor="@color/textWhite" />
                     </LinearLayout>
 
                     <Button
@@ -190,7 +190,7 @@
                         android:background="@drawable/rounded_login_button"
                         android:text="Logout"
                         android:textAllCaps="false"
-                        android:textColor="@color/textSmokeWhite" />
+                        android:textColor="@color/textWhite" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

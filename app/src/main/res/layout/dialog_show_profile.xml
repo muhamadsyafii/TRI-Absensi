@@ -42,6 +42,6 @@
             android:background="@drawable/rounded_login_button"
             android:text="Dismiss"
             android:textAllCaps="false"
-            android:textColor="@color/textSmokeWhite" />
+            android:textColor="@color/textWhite" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

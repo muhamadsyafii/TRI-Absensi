@@ -68,7 +68,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enter your valid nik"
-                    android:textColor="@color/textRed" />
+                    android:textColor="@color/textRed"
+                    android:visibility="gone"/>
 
                 <Button
                     android:id="@+id/btn_login"
@@ -78,7 +79,7 @@
                     android:background="@drawable/rounded_login_button"
                     android:text="Login"
                     android:textAllCaps="false"
-                    android:textColor="@color/textSmokeWhite" />
+                    android:textColor="@color/textWhite" />
         </LinearLayout>
     </ScrollView>
 

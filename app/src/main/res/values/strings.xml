@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">TRI Absensi</string>
+    <string name="app_name">TRID Absensi</string>
     <!--OnBoarding-->
     <string name="boarding_title">Selamat Datang</string>
     <string name="boarding_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry</string>
-    <string name="boarding_title1">Apa itu TRI Absensi ?</string>
+    <string name="boarding_title1">Apa itu TRID Absensi ?</string>
     <string name="boarding_desc1">Merupakan sebuah aplikasi untuk membantu proses absensi untuk karyawan PT Tokai Rubber Indonesia</string>
     <string name="boarding_title2">Cara Penggunaan Aplikasi Absen</string>
     <string name="boarding_desc2">Aplikasi ini hanya dapat digunakan di lingkungan PT Tokai Rubber Indonesia dengan memakai jaringan internet perusahaan</string>
