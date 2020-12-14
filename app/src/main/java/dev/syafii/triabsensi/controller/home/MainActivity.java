@@ -65,6 +65,10 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     @BindView(R.id.im_history)
     ImageView btnHistory;
 
+    //new field
+    @BindView(R.id.tv_department)
+    TextView tvDepartment;
+
     boolean isExit = false;
     private MainContract.Presenter presenter;
     CustomProgressBar progressBar;
@@ -168,26 +172,28 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     public void showSuccessProfile(List<UserResponse> data) {
         UserResponse response = new UserResponse();
         for (UserResponse list : data) {
-            response.setNik(list.getNik());
+            response.setnIK(list.getnIK());
             response.setNama(list.getNama());
-            response.setJeKel(list.getJeKel());
-            response.setCategory(list.getCategory());
-            response.setFoto(list.getFoto());
+            response.setJenisKelamin(list.getJenisKelamin());
+            response.setDepartemen(list.getDepartemen());
+            response.setKategori(list.getKategori());
+            response.setFotoProfil(list.getFotoProfil());
         }
 
         //this is for show field profile
         svLayout.setVisibility(View.VISIBLE);
-        tvNik.setText(response.getNik());
+        tvNik.setText(response.getnIK());
         tvName.setText(response.getNama());
-        tvDob.setText(response.getJeKel());
-        tvCategory.setText(response.getCategory());
-        ImageUtils.loadAvatar(this, response.getFoto(), ciAvatar);
+        tvDob.setText(response.getJenisKelamin());
+        tvCategory.setText(response.getKategori());
+        tvDepartment.setText(response.getDepartemen());
+        ImageUtils.loadAvatar(this, response.getFotoProfil(), ciAvatar);
 
         //this dialog for show foto profile
         ciAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showProfile(response.getFoto());
+                showProfile(response.getFotoProfil());
             }
         });
         setupShowCase(R.id.im_history, "Menu History", "Klik disini untuk melihat history absen", 1);

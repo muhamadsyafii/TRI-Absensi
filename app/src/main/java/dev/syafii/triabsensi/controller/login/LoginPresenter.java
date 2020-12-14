@@ -47,7 +47,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                     view.hideProgress();
                     List<UserResponse> list = data.getResult();
                     for (UserResponse result : list) {
-                        view.loginSuccess(result.getNik(), result.getNama());
+                        view.loginSuccess(result.getnIK(), result.getNama());
                     }
                 }
 

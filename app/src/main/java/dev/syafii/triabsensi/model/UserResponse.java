@@ -10,16 +10,18 @@ import java.util.List;
 
 public class UserResponse {
 
-	@SerializedName("nik")
-	private String nik;
-	@SerializedName("je_kel")
-	private String jeKel;
-	@SerializedName("nama")
+	@SerializedName("NIK")
+	private String nIK;
+	@SerializedName("Nama")
 	private String nama;
-	@SerializedName("nam_kateg")
-	private String category;
-	@SerializedName("foto")
-	private String foto;
+	@SerializedName("Jenis Kelamin")
+	private String jenisKelamin;
+	@SerializedName("Departemen")
+	private String departemen;
+	@SerializedName("Kategori")
+	private String kategori;
+	@SerializedName("Foto Profil")
+	private String fotoProfil;
 
 	public static UserResponse objectFromData(String str) {
 
@@ -34,20 +36,12 @@ public class UserResponse {
 		return new Gson().fromJson(str, listType);
 	}
 
-	public String getNik() {
-		return nik;
+	public String getnIK() {
+		return nIK;
 	}
 
-	public void setNik(String nik) {
-		this.nik = nik;
-	}
-
-	public String getJeKel() {
-		return jeKel;
-	}
-
-	public void setJeKel(String jeKel) {
-		this.jeKel = jeKel;
+	public void setnIK(String nIK) {
+		this.nIK = nIK;
 	}
 
 	public String getNama() {
@@ -58,19 +52,35 @@ public class UserResponse {
 		this.nama = nama;
 	}
 
-	public String getCategory() {
-		return category;
+	public String getJenisKelamin() {
+		return jenisKelamin;
 	}
 
-	public void setCategory(String category) {
-		this.category = category;
+	public void setJenisKelamin(String jenisKelamin) {
+		this.jenisKelamin = jenisKelamin;
 	}
 
-	public String getFoto() {
-		return foto;
+	public String getDepartemen() {
+		return departemen;
 	}
 
-	public void setFoto(String foto) {
-		this.foto = foto;
+	public void setDepartemen(String departemen) {
+		this.departemen = departemen;
+	}
+
+	public String getKategori() {
+		return kategori;
+	}
+
+	public void setKategori(String kategori) {
+		this.kategori = kategori;
+	}
+
+	public String getFotoProfil() {
+		return fotoProfil;
+	}
+
+	public void setFotoProfil(String fotoProfil) {
+		this.fotoProfil = fotoProfil;
 	}
 }
